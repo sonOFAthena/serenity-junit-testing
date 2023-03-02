@@ -12,7 +12,6 @@ public class LoginActions extends UIInteractionSteps {
         openUrl("https://www.saucedemo.com/");
 
         // Login as a standard user
-        find(By.id("username")).type(user.getUsername());
         $("#user-name").sendKeys(user.getUsername());
         $("#password").sendKeys(user.getPassword());
         $("#login-button").click();
